@@ -74,6 +74,10 @@ hr{
 
 }
 .publicidad img{
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    width: 80%;
     max-height: min-content;
    
 }
