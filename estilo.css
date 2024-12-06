@@ -7,6 +7,7 @@
 body {
 margin: 40px;
 font-family: cursive;
+background-color: rgb(232, 204, 232);
 }
 
 
@@ -40,12 +41,13 @@ hr{
     color: black;
     padding: 5px;
     cursor: pointer;
+    border: #777;
 
 }
 .activo{
     border: 1px solid;
     border-radius: 2px;
-    background-color: rgb(3, 73, 50);
+    background-color: rgb(255, 0, 234);
     color: rgb(255, 255, 255);
     border: 1px;
     border-radius: 5px;
@@ -57,7 +59,7 @@ hr{
 
 /*estilo del pie*/
 .pie {
-    background-color: rgb(3, 73, 50);
+    background-color: rgb(228, 0, 213);
     color: rgb(255, 255, 255);
     border: 1px;
     border-radius: 5px;
@@ -88,14 +90,14 @@ hr{
     gap: 20px;
 }
 .tarjeta{
-    border: 3px solid #777;
+    border: 3px solid #ff00c8;
     border-radius: 10px;
 }
 .tarjeta h3{
     color: #777;
 }
 .tarjeta a {
-    color: aqua;
+    color: rgb(186, 83, 234);
     text-decoration: none;
 }
 .foto{
@@ -109,11 +111,15 @@ hr{
     margin-bottom: 20px
 }
 .imagen-fija{
-    width: 200px; 
-  height: 150px; 
+    width: 300px; 
+  height: 250px; 
   object-fit: cover; 
   border-radius: 5px;
   align-content: center;
   border: #777;
   display: grid;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex-basis: 200;
 }
