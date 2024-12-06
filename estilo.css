@@ -100,6 +100,9 @@ hr{
     color: rgb(186, 83, 234);
     text-decoration: none;
 }
+
+
+/*AGREGANDO ESTILO A GALERIA*/
 .foto{
     
     padding: 100px;
@@ -111,15 +114,92 @@ hr{
     margin-bottom: 20px
 }
 .imagen-fija{
-    width: 300px; 
-  height: 250px; 
+    width: 600px; 
+  height: 400px; 
   object-fit: cover; 
   border-radius: 5px;
   align-content: center;
   border: #777;
   display: grid;
   display: flex;
-  flex-grow: 1;
+  flex-grow: 1fr;
   flex-wrap: wrap;
-  flex-basis: 200;
+  flex-basis: 1fr;
 }
+
+/*diseño a los videos*/
+.contenedor-videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    align-content: center;
+    margin-bottom: 20px
+}
+
+/*ESTILO A LAS NOTICIAS*/
+
+CSS (en estilos.css)
+
+.contenedor-noticias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.noticia {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.columna {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.columna-1 {
+    grid-column: 1;
+}
+
+.columna-2 {
+    grid-column: 2;
+}
+
+.columna-3 {
+    grid-column: 3;
+}
+
+.columna-4 {
+    grid-column: 4;
+}
+
+.columna-5 {
+    grid-column: 5;
+}
+
+.columna-6 {
+    grid-column: 6;
+}
+
+.columna-7 {
+    grid-column: 7;
+}
+
+.noticia_es{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+
